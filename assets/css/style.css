@@ -37,7 +37,7 @@ header nav ul a:hover {
 }
 
 .hero {
-  background-image: linear-gradient(rgb(255, 255, 255), transparent), url(../img/ordi-code.jpg);
+  background-image: linear-gradient(rgb(255, 255, 255), transparent), url(../img/ordi.jpg);
   display: flex; 
   flex-direction: column;
   text-align: center;
@@ -46,7 +46,7 @@ header nav ul a:hover {
   background-size: cover; 
   background-position: center; 
   padding: 20px; 
-  height: 300px;
+  height: 430px;
 }
 
 
@@ -242,8 +242,8 @@ main .skills .skills-types .background ul li:hover {
 }
 
 main .form {
+  padding: 5em;
   background-size: cover;
-  padding: 2em;
 }
 
 main .form .container {
@@ -252,8 +252,37 @@ main .form .container {
   border-radius: 30px;
   padding: 20px;
   margin: auto;
-  width: auto;
-  text-align: center;
+  /* text-align: center; */
+  width: 100%;
+  max-width: 850px;
 }
 
+main .form .container abbr {
+  color: firebrick;
+  text-decoration: none;
+}
 
+main .form .container p:nth-child(3) {
+  font-size: 0.7em;
+  margin-top: 3em;
+  font-weight: bold;
+}
+
+main .form .container input {
+  background-color: #ffffffe3;
+  color: darkslategray;
+  padding: 12px 20px;
+  border: 1px solid lightgrey;
+  cursor: pointer;
+  margin: 5px;
+}
+
+main .form .container div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.container h2 {
+  text-align: center;
+}

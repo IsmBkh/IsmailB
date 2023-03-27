@@ -22,7 +22,7 @@
                         <a href="index.php" class="nav-link">Mes projets</a>
                     </li>
                     <li class="nav-item p-2">
-                        <a href="index.php?page=contact" class="nav-link">Contact</a>
+                        <!-- <a href="index.php?page=contact" class="nav-link">Contact</a> -->
                     </li>
                 </ul>
             </div>
@@ -50,8 +50,15 @@
 
                 <div class="info">
                     <h3>Mon parcours</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique molestias.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eius ex dolorum ea</p>
+                    <p>
+                        Après une expérience en comptabilité qui m'a permis de développer un sens de l'organisation et du détail, j'ai décidé de me consacrer à ma passion pour l'informatique.
+                    </p>
+                    <p>
+                    Aujourd'hui en reconversion professionnelle, très motivé et rigoureux, j'apprends actuellement plusieurs languages et frameworks en autodidact afin de développer mon portfolio dans un premier temps et dans le but de proposer mes services à mes amis dans le court terme.
+                    </p>
+                    <p>
+                        Ps : Ce site est en cours de développement et je projete d'ajouter de nombreuses fonctionnalités axé Backend (Espace connexion, Backoffice)
+                    </p>
 
                     <h3>Soft skills</h3>
                     <ul>
@@ -158,7 +165,7 @@
         <p><abbr title="(obligatoire)" aria-hidden="true">*</abbr> Champs obligatoires</p>
 
 
-        <form enctype="multipart/form-data" method="post" action="?action=submitFormAddContact">
+        <form enctype="multipart/form-data" action="http://localhost/IsmailB/traitements/form-contact.php" method="POST" >
             
             <div>
                 <label for="firstname"><abbr title="(obligatoire)">*</abbr> Prénom</label>
@@ -203,7 +210,7 @@
 
 
     </main>
+ 
 
-                <!-- ROOTING -->
 </body>
 </html>
