@@ -56,8 +56,8 @@
                     <p>
                     Aujourd'hui en reconversion professionnelle, très motivé et rigoureux, j'apprends actuellement plusieurs languages et frameworks en autodidact afin de développer mon portfolio dans un premier temps et dans le but de proposer mes services à mes amis dans le court terme.
                     </p>
-                    <p>
-                        Ps : Ce site est en cours de développement et je projete d'ajouter de nombreuses fonctionnalités axé Backend (Espace connexion, Backoffice)
+                    <p class="font-italic">
+                        Ps : Ce site est en cours de développement et je projete d'ajouter de nombreuses fonctionnalités axé Backend (Espace connexion, Backoffice...)
                     </p>
 
                     <h3>Soft skills</h3>
@@ -163,7 +163,7 @@
         <p><abbr title="(obligatoire)" aria-hidden="true">*</abbr> Champs obligatoires</p>
 
 
-        <form action="lib/traitement-contact" method="POST" >
+        <form action="lib/traitement-contact.php" method="POST" >
             
             <div>
                 <label for="prenom"><abbr title="(obligatoire)">*</abbr> Prénom</label>
