@@ -36,7 +36,7 @@
                 <img src="assets/img/place.svg" alt="" width="20" height="20">
                 <strong>Montfermeil</strong> 
             </a>
-            <a href="index.php?page=contact" class="btn btn-outline-light">Me contacter</a>
+            <a href="#contact" class="btn btn-outline-light">Me contacter</a>
         </div>
 
 
@@ -152,45 +152,43 @@
         <!-- CONTACT -->
 
 
-<section class="form">
+<section class="form" id="contact">
 
     <div class="container">
 
         <h2>Contact</h2>
         <p>Pour plus de renseignements, n'hésitez pas à me contacter !</p>
 
-        
-        
-                
+                     
         <p><abbr title="(obligatoire)" aria-hidden="true">*</abbr> Champs obligatoires</p>
 
 
-        <form enctype="multipart/form-data" action="http://localhost/IsmailB/traitements/form-contact.php" method="POST" >
+        <form action="lib/traitement-contact" method="POST" >
             
             <div>
-                <label for="firstname"><abbr title="(obligatoire)">*</abbr> Prénom</label>
-                <input type="text" id="firstname" name="firstname" placeholder="Votre prénom" required>
+                <label for="prenom"><abbr title="(obligatoire)">*</abbr> Prénom</label>
+                <input type="text" id="firstname" name="prenom" placeholder="Votre prénom" required value="<?php echo isset($_SESSION["form"]["prenom"]) ? $_SESSION["form"]["prenom"] : ""  ?>">
             </div>
 
             <div>
-                <label for="lastname"><abbr title="(obligatoire)">*</abbr> Nom</label>
-                <input type="text" id="lastname" name="lastname" placeholder="Votre nom" required>
+                <label for="nom"><abbr title="(obligatoire)">*</abbr> Nom</label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom" required value="<?php echo isset($_SESSION["form"]["nom"]) ? $_SESSION["form"]["nom"] : ""  ?>">
             </div>
 
 
             <div>
                 <label for="tel">Téléphone</label>
-                <input type="tel" id="tel" name="tel" placeholder="Téléphone">
+                <input type="tel" id="tel" name="tel" placeholder="Téléphone" value="<?php echo isset($_SESSION["form"]["tel"]) ? $_SESSION["form"]["tel"] : ""  ?>">
             </div>
 
             <div>
                 <label for="email"><abbr title="(obligatoire)">*</abbr> Mail</label>
-                <input type="email" id="email" name="mail" placeholder="mail@example.com" required>
+                <input type="email" id="email" name="email" placeholder="mail@example.com" required value="<?php echo isset($_SESSION["form"]["email"]) ? $_SESSION["form"]["email"] : ""  ?>">
             </div>
 
             <div>
                 <label for="message"><abbr title="(obligatoire)">*</abbr> Message</label>
-                <textarea id="message" name="message" cols="20" rows="8" placeholder ="Votre message" required></textarea>
+                <textarea id="message" name="message" cols="20" rows="8" placeholder ="Votre message" required value="<?php echo isset($_SESSION["form"]["message"]) ? $_SESSION["form"]["message"] : ""  ?>"></textarea>
             </div>
 
             <input type="submit" value ="Envoyer" name="submit" id="submit">
@@ -200,16 +198,12 @@
         
     </div>
 
-</section>                
+</section>              
+
+</main>
 
 
 
-
-
-
-
-
-    </main>
  
 
 </body>
