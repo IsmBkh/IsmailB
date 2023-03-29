@@ -37,7 +37,7 @@ header nav ul a:hover {
 }
 
 .hero {
-  background-image: linear-gradient(rgb(255, 255, 255), transparent), url(../img/ordi.jpg);
+  background-image: linear-gradient(rgb(217, 48, 48), transparent), url(../img/ordi.jpg);
   display: flex; 
   flex-direction: column;
   text-align: center;

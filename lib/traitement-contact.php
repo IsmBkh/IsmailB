@@ -6,7 +6,7 @@ $prenom = $_POST['prenom'];
 $nom = $_POST['nom'];
 $tel = $_POST['tel'];
 $email = $_POST['email'];
-$message = $_POST['message'];
+$commentaire = $_POST['commentaire'];
 
 // Connexion à la base de données MySQL
 
@@ -30,8 +30,12 @@ try {
 
 // Insérer les données du formulaire dans la table de contacts
 
-$sth = $pdo->prepare("INSERT INTO contacts (prenom, nom, tel, email, `message`) VALUES (?, ?, ?, ?, ?)");
-$sth->execute([$prenom, $nom, $tel, $email, $message]);
+$sth = $connexion->prepare("
+    INSERT INTO contacts (prenom, nom, tel, email, commentaire, dt_creation) 
+    VALUES 
+    (:email, :nom, :tel, :email, :commentaire, NOW()
+    ");
+$sth->execute($_POST);
 
 header("Location:".WWW."?confirmation.php");
 exit();

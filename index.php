@@ -188,7 +188,7 @@
 
             <div>
                 <label for="message"><abbr title="(obligatoire)">*</abbr> Message</label>
-                <textarea id="message" name="message" cols="20" rows="8" placeholder ="Votre message" required value="<?php echo isset($_SESSION["form"]["message"]) ? $_SESSION["form"]["message"] : ""  ?>"></textarea>
+                <textarea id="commentaire" name="commentaire" cols="20" rows="8" placeholder ="Votre message" required value="<?php echo isset($_SESSION["form"]["commentaire"]) ? $_SESSION["form"]["commentaire"] : ""  ?>"></textarea>
             </div>
 
             <input type="submit" value ="Envoyer" name="submit" id="submit">
