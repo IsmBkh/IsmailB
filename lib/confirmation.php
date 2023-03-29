@@ -8,7 +8,7 @@ if (isset($_POST['submit'])) {
     $nom = htmlspecialchars(trim($_POST['nom']));
     $tel = htmlspecialchars(trim($_POST['tel']));
     $email = htmlspecialchars(trim($_POST['email']));
-    $message = htmlspecialchars(trim($_POST['message']));
+    $message = htmlspecialchars(trim($_POST['commentaire']));
 
     // Vérifier si les champs obligatoires ont été remplis
     if (!empty($prenom) && !empty($nom) && !empty($email) && !empty($message)) {
