@@ -159,10 +159,10 @@
         <h2>Contact</h2>
         <p>Pour plus de renseignements, n'hésitez pas à me contacter !</p>
 
-                     
+              
         <p><abbr title="(obligatoire)" aria-hidden="true">*</abbr> Champs obligatoires</p>
 
-
+        <!-- est ce que lorsque tu soumets le formulaire, le site redirige bien vers lib/traitement-contact.php -->
         <form action="lib/traitement-contact.php" method="POST" >
             
             <div>
