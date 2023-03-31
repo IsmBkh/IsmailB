@@ -2,6 +2,7 @@
 
 // Récupération des données formulaire contact
 
+// il faut réaliser des vérifications sur les valeurs dans $_POST avant de les stocker dans les variables 
 $prenom = $_POST['prenom'];
 $nom = $_POST['nom'];
 $tel = $_POST['tel'];
@@ -10,6 +11,9 @@ $commentaire = $_POST['commentaire'];
 
 // Connexion à la base de données MySQL
 
+// attention il ne faut pas mettre les identifiants de la base de données en clair (en tout cas sur github)
+// est ce que ces identifiants fonctionnent ?? Est ce que tu as essayer de faire un INSERT directement
+// ajouter un var_dump sur $pdo pour vérifier que ça fonctionne
 $host='localhost';
 $dbname='id20512936_portfolio';
 $username='id20512936_ismailbakhtaoui';
@@ -36,6 +40,8 @@ $sth = $connexion->prepare("
     (:email, :nom, :tel, :email, :commentaire, NOW()
     ");
 $sth->execute($_POST);
+
+// la constant WWW n'est pas déclarée
 
 header("Location:".WWW."?confirmation.php");
 exit();
